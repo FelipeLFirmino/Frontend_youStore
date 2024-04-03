@@ -17,8 +17,8 @@ const theme = createTheme({
     <ThemeProvider theme={theme}>
       <div className="App">
         {/* login template from material UI */}
-        {/* <SignInSide></SignInSide> */}
-       <Dashboard></Dashboard>
+        <SignInSide></SignInSide>
+       {/* <Dashboard></Dashboard> */}
       </div>
     </ThemeProvider>
   );

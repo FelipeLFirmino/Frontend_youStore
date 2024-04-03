@@ -1,6 +1,8 @@
-import { Container, Typography,Box } from '@mui/material';
+import { Container, Typography,Box, Grid } from '@mui/material';
 import * as React from 'react';
 import Barcomponent from '../components/Barchart';
+import Piecomponent from '../components/Piechart';
+import Demandforecast from '../components/Demandforecast';
 
 export default function Dashboard(){
     return(
@@ -8,7 +10,12 @@ export default function Dashboard(){
             <Box textAlign={'left'} >
                 <Typography variant='h3' fontWeight={'bold'} color={"white"} >Dashboard</Typography>
             </Box>
-            <Barcomponent></Barcomponent>
+            <Grid container spacing={3}>
+                <Grid item>  <Barcomponent></Barcomponent></Grid>
+                <Grid item><Piecomponent></Piecomponent></Grid>
+                <Grid item> <Demandforecast></Demandforecast> </Grid>
+                
+            </Grid>
         </Container>
     )
 }
