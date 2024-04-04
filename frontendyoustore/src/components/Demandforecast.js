@@ -1,4 +1,4 @@
-import { Box,Container,Typography } from "@mui/material";
+import { Box,Container,Grid,Typography } from "@mui/material";
 import React from "react";
 
 export default function Demandforecast(){
@@ -8,6 +8,14 @@ export default function Demandforecast(){
         <Typography variant="h5" >Previsao de demanda</Typography>
             <Box>estoque vazio em: </Box>
             <Box>proximo pedido agendado para: </Box>
+            <Grid direction={"column"} >
+                <Grid item > PEDIDO UM  </Grid>
+                <Grid item > PEDIDO UM  </Grid>
+                <Grid item > PEDIDO UM  </Grid>
+                <Grid item > PEDIDO UM  </Grid>
+                <Grid item > PEDIDO UM  </Grid>
+                <Grid item > PEDIDO UM  </Grid>
+            </Grid>
         </Container>
     )
 }
