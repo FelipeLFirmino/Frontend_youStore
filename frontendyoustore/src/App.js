@@ -3,6 +3,7 @@ import Dashboard from './pages/Dashboard';
 import SignInSide from './pages/SignInSide';
 import { useEffect, useState } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Menubar from './components/Menubar';
 
 
 function App() {
@@ -45,6 +46,7 @@ useEffect(() => {
      
         {/* login template from material UI */}
         {/* <SignInSide></SignInSide> */}
+       <Menubar></Menubar>
        <Dashboard></Dashboard>
       </div>
     </ThemeProvider>
