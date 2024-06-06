@@ -10,6 +10,9 @@ function App() {
 
 // paleta de cores e tema que sera usado na nossa aplicação
 const theme = createTheme({
+  typography:{
+    fontFamily:"Montserrat"
+  },
   palette: {
     Yellowbutton: {
      main: '#F5AA27',
