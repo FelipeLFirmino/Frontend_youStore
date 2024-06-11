@@ -35,7 +35,7 @@ export default function Selectproduct({ onChange }) {
 
   return (
     <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
+      <FormControl fullWidth variant='filled' sx={{backgroundColor: "rgba(255, 255, 255, 0.3)", color:"white", borderRadius:"15px"}}>
         <InputLabel id="demo-simple-select-label">Produto</InputLabel>
         <Select
           labelId="demo-simple-select-label"

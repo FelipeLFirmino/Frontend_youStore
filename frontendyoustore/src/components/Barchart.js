@@ -33,23 +33,26 @@ export default function Barcomponent(){
         }
     };
 
-    return (
-        <Container fluid maxWidth="lg" sx={{ backgroundColor: "white", opacity: ".30", borderRadius: "15px" }}>
+    return ( 
+        <Container>
             <Selectproduct rotas={rotas} onChange={carregarDadosProduto} />
-            {dadosProduto && (
-                <div>
-                    <h2>{dadosProduto.nome}</h2>
-                    <BarChart
-                        xAxis={[{ scaleType: 'band', data: ['Jan', 'Fev', 'Mar', 'Abr', 'Maio', 'Junho', 'julho', 'ago', 'set', 'out', 'nov'] }]}
-                        series={[
-                            { data: Array.isArray(dadosProduto) ? dadosProduto.map(item => item.quantidade) : [], name: 'Quantidade' },
-                            { data: Array.isArray(dadosProduto) ? dadosProduto.map(item => item.media_vendas) : [], name: 'Média de Vendas' }
-                        ]}
-                        width={700}
-                        height={300}
-                    />
-                </div>
-            )}
+            <Container fluid maxWidth="lg" sx={{ backgroundColor: "white", opacity: ".30", borderRadius: "15px" }}>
+            
+                {dadosProduto && (
+                    <div>
+                        <h2>{dadosProduto.nome}</h2>
+                        <BarChart
+                            xAxis={[{ scaleType: 'band', data: ['Jan', 'Fev', 'Mar', 'Abr', 'Maio', 'Junho', 'julho', 'ago', 'set', 'out', 'nov'] }]}
+                            series={[
+                                { data: Array.isArray(dadosProduto) ? dadosProduto.map(item => item.quantidade) : [], name: 'Quantidade' },
+                                { data: Array.isArray(dadosProduto) ? dadosProduto.map(item => item.media_vendas) : [], name: 'Média de Vendas' }
+                            ]}
+                            width={700}
+                            height={300}
+                        />
+                    </div>
+                )}
+            </Container>
         </Container>
     );
 
