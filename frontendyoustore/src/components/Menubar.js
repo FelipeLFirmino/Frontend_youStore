@@ -8,7 +8,7 @@ export default function Menubar() {
       maxWidth="lg"
       sx={{
         backgroundColor: "#F5AA27",
-        marginTop: "10px",
+        paddingTop:'10px',
         borderRadius: "25px",
         maxHeight: "60px",
         alignContent: "center"
