@@ -25,7 +25,7 @@ const [dadosProdutos, setProdutos] = useState(null);
 useEffect(() => {
   async function fetchData() {
     try {
-      const response = await fetch('/caminho_ler_arquivos');
+      const response = await fetch('/caminho_ler_produtos');
       if (!response.ok) {
         throw new Error('Erro ao obter os dados dos computadores');
       }
